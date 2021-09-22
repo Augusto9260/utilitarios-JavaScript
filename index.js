@@ -5,8 +5,8 @@ const puppeteer = require("puppeteer");
     const page = await browser.newPage();
     // Acessa a pagina e faz o login.
     await page.goto('http://172.16.0.1/login.asp');
-    await page.type('[name="Username"]', 'admin');
-    await page.type('[name="Password"]', 'shutdown');
+    await page.type('[name="Username"]', 'seu usuário');
+    await page.type('[name="Password"]', 'sua senha');
     await page.click('[class="button1"]');
     // Reinicia o roteador.
     await page.click('[class="btn"]');
